@@ -9,8 +9,8 @@ get_page = bs4.BeautifulSoup(html_source.text, 'html.parser')
 get_page.select('#detailIndex0 > summary > div > div > h2')
 get_current_weather_hour = get_page.select('#detailIndex0 > summary > div > div > h2')
 current_weather_hour = get_current_weather_hour[0]
-greeting_message_AM = 'Good Morning, Mr. Haley! Now fetching your weather report for: '
-greeting_message_PM = 'Good Afternoon, Mr. Haley! Now fetching your weather report for: '
+greeting_message_AM = 'Good Morning! Now fetching your weather report for: '
+greeting_message_PM = 'Good Afternoon! Now fetching your weather report for: '
 find_AM = "am"
 find_PM = "pm"
 
